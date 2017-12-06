@@ -40,7 +40,7 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Country List"
+        self.title = "Select Country/Region"
         self.view.backgroundColor = .white
         
         tableView = UITableView(frame: view.frame)
@@ -119,7 +119,7 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    func handleCancel() {
+    @objc func handleCancel() {
         self.dismiss(animated: true, completion: nil)
     }
 }

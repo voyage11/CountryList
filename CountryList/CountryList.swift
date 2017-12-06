@@ -51,7 +51,13 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         tableView.backgroundColor = UIColor.clear
         
         self.view.addSubview(tableView)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(handleCancel))
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(handleCancel))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"xBtn"), style: .plain, target: self, action: #selector(handleCancel))
+
+        //let barButtonItem = UIBarButtonItem(image: UIImage(named:"backIcon"), style: .plain, target: self, action: #selector(self.closeNavigation))
+        //navController.navigationItem.leftBarButtonItem = barButtonItem
+        
+        
         
         setUpSearchBar()
     }

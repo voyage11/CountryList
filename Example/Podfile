@@ -6,6 +6,8 @@ target 'CountryListExample' do
   use_frameworks!
 
   # Pods for CountryListExample
-pod 'CountryList'
+  # pod 'CountryList'
+pod 'CountryList', :git => 'https://github.com/voyage11/CountryList'
+
 
 end

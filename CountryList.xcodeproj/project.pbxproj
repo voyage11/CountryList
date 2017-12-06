@@ -12,6 +12,7 @@
 		690994EA1F63433F0057F43A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994E61F63433F0057F43A /* Country.swift */; };
 		690994EB1F63433F0057F43A /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994E71F63433F0057F43A /* CountryCell.swift */; };
 		690994EC1F63433F0057F43A /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690994E81F63433F0057F43A /* CountryList.swift */; };
+		9C9DD2521FD793E10054B5D4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9DD2511FD793E10054B5D4 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		690994E61F63433F0057F43A /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		690994E71F63433F0057F43A /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		690994E81F63433F0057F43A /* CountryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
+		9C9DD2511FD793E10054B5D4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				690994E61F63433F0057F43A /* Country.swift */,
 				690994E71F63433F0057F43A /* CountryCell.swift */,
 				690994E81F63433F0057F43A /* CountryList.swift */,
+				9C9DD2511FD793E10054B5D4 /* Media.xcassets */,
 			);
 			path = CountryList;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9DD2521FD793E10054B5D4 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +320,7 @@
 				690994BA1F63175C0057F43A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

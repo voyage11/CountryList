@@ -2,11 +2,20 @@ PODS:
   - CountryList (1.1)
 
 DEPENDENCIES:
-  - CountryList
+  - CountryList (from `https://github.com/voyage11/CountryList`)
+
+EXTERNAL SOURCES:
+  CountryList:
+    :git: https://github.com/voyage11/CountryList
+
+CHECKOUT OPTIONS:
+  CountryList:
+    :commit: e41616e8ba44cdc5e0063daeb9d8859d957abc47
+    :git: https://github.com/voyage11/CountryList
 
 SPEC CHECKSUMS:
-  CountryList: ad58cd670c4ecab6bb014abebc12e63f619174b2
+  CountryList: 48226f29b64802af50f2caafc6aa87df54e0f88e
 
-PODFILE CHECKSUM: c8d0a9d36b6f2e9acce11964cd1771024faac1f7
+PODFILE CHECKSUM: 49848abbf1b9f818166da0091ae518aa0b3eea00
 
 COCOAPODS: 1.2.1
