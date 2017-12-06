@@ -52,7 +52,14 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         
         self.view.addSubview(tableView)
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(handleCancel))
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"xBtn"), style: .bordered, target: self, action: #selector(handleCancel))
+        
+        let button = UIButton.init(type: .custom)
+        button.setImage(UIImage(named: "xBtn"), for: UIControlState.normal)
+        button.addTarget(self, action: #selector(handleCancel), for: UIControlEvents.touchUpInside)
+        button.frame = CGRect(x: 0, y: 0, width: 19, height: 19)
+        
+        let barButton = UIBarButtonItem(customView: button)
+        self.navigationItem.leftBarButtonItem = barButton
         
         setUpSearchBar()
     }
