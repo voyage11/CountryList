@@ -27,15 +27,15 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         return countryList
     }
     
-//    var indexList: [String] {
-//        var indexList: [String] = []
-//        for country in countryList {
-//            if let firstLetter = country.name?.characters.first?.description.lowercased() {
-//                if !indexList.contains(firstLetter) { indexList.append(firstLetter) }
-//            }
-//        }
-//        return indexList
-//    }
+    //    var indexList: [String] {
+    //        var indexList: [String] = []
+    //        for country in countryList {
+    //            if let firstLetter = country.name?.characters.first?.description.lowercased() {
+    //                if !indexList.contains(firstLetter) { indexList.append(firstLetter) }
+    //            }
+    //        }
+    //        return indexList
+    //    }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -54,8 +54,8 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(handleCancel))
         
         let button = UIButton.init(type: .custom)
-        button.setImage(UIImage(named: "xBtn"), for: UIControlState.normal)
-        button.addTarget(self, action: #selector(handleCancel), for: UIControlEvents.touchUpInside)
+        button.setImage(UIImage(named: "xBtn"), for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(handleCancel), for: UIControl.Event.touchUpInside)
         button.frame = CGRect(x: 0, y: 0, width: 19, height: 19)
         
         let barButton = UIBarButtonItem(customView: button)
@@ -86,12 +86,12 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.tableHeaderView = searchController?.searchBar
         self.searchController?.hidesNavigationBarDuringPresentation = false
         
-//        self.searchController?.searchBar.backgroundImage = UIImage()
+        //        self.searchController?.searchBar.backgroundImage = UIImage()
         self.searchController?.dimsBackgroundDuringPresentation = false
-//        self.searchController?.searchBar.barTintColor = UIColor.white
+        //        self.searchController?.searchBar.barTintColor = UIColor.white
         self.searchController?.searchBar.placeholder = "Search"
-//        self.searchController?.searchBar.tintColor = Constants.Colors.mainColor
-//        self.searchController?.searchBar.backgroundColor = UIColor.white
+        //        self.searchController?.searchBar.tintColor = Constants.Colors.mainColor
+        //        self.searchController?.searchBar.backgroundColor = UIColor.white
         self.searchController?.searchResultsUpdater = self
     }
     
